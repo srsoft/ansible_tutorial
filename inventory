@@ -1,4 +1,7 @@
-192.168.0.7
-192.168.0.2
-192.168.0.3
-192.168.0.6
+[ubuntu_servers]
+192.168.0.7	apache_package=apache2	php_package=libapache2-mod-php
+192.168.0.2	apache_package=apache2  php_package=libapache2-mod-php
+192.168.0.3	apache_package=apache2  php_package=libapache2-mod-php
+
+[rocky_servers]
+192.168.0.6	apache_package=httpd  	php_package=php
