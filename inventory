@@ -5,3 +5,7 @@
 
 [rocky_servers]
 192.168.0.6	apache_package=httpd  	php_package=php
+
+[db_servers]
+192.168.0.5
+192.168.0.9
