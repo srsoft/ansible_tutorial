@@ -3,7 +3,7 @@
 - hosts: all
   become: true
   tasks:
-  
+
   - name: install updates (Rocky)
     dnf:
       update_only: yes
@@ -19,7 +19,7 @@
 - hosts: ubuntu_servers
   become: true
   tasks:
-	
+
   - name: install apache2 and php package
     apt:
       name: 
@@ -27,7 +27,6 @@
       - libapache2-mod-php
       state: latest
     when: ansible_distribution == "Ubuntu"
-    
     
 - hosts: rocky_servers
   become: true
@@ -39,4 +38,4 @@
       - httpd
       - php
       state: latest
-    when: ansible_distribution == "Rocky"    
+    when: ansible_distribution == "Rocky"
