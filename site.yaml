@@ -33,10 +33,10 @@
   roles:
     - ubuntu_servers
     
-- hosts: rocky_servers
+- hosts: web_servers
   become: true
   roles:
-    - rocky_servers
+    - web_servers
 
 - hosts: db_servers
   become: true
