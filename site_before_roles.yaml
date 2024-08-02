@@ -58,7 +58,7 @@
       state: latest
     when: ansible_distribution == "Ubuntu"
     
-- hosts: rocky_servers
+- hosts: web_servers
   become: true
   tasks:
     
